@@ -1,0 +1,12 @@
+import CardFilme from "./CardFime";
+
+export default function SecaoFilmes(props){
+    const filmes = props.filmes
+    console.log(filmes)
+    return(
+        
+     filmes.map(filme => <CardFilme filme = {filme}/>)
+
+    )
+    
+}
